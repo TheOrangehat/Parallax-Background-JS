@@ -1,0 +1,39 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+#parallax-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#Bottomlayer,
+#Middlelayer,
+#Toplayer {
+  height: 100vh;
+  transition: all 0.1s linear;
+  position: absolute;
+}
+#Bottomlayer {
+  height: 330px;
+  right: 28vw;
+  top: 34vh;
+  z-index: 0;
+}
+
+#Middlelayer {
+  z-index: 1;
+  left: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#Toplayer {
+  z-index: 2;
+  right: 0%;
+}
